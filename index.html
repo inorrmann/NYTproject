@@ -14,68 +14,71 @@
 
 </head>
 <body>
-        <div class="container">
-        <div class="jumbotron" style="">
-                <h1 class="text-center">
-                  <strong>
-                    <i class="fa fa-newspaper-o"></i> New York Times Search</strong>
-                </h1>
+  <div class="container">
+    <div class="jumbotron" style="">
+      <h1 class="text-center">
+        <strong>
+          <i class="fa fa-newspaper-o"></i>
+          New York Times Search
+        </strong>
+      </h1>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <br>
+        <div class="card">
+          <div class="card-header">
+              <strong>
+                <i class="fa fa-list-alt"></i>
+                Search Parameters
+              </strong>
+          </div>
+          <div class="card-body">
+            <form role="form" action="" id="form"></form>
+              
+              <div class="form-group"></div>
+                <label for="search">Search Term:</label>
+                <input type="text" class="form-control" id="search">
+              </div>
+              
+              <div class="form-group">
+                <label for="pwd">Number of Records to Retrieve:</label>
+                <input type="number" class="form-control" id="numRecs">
+                </select>
               </div>
 
-        <div class="row">
-                 <div class="col-sm-12">
-                      <br>
-                      <div class="card">
-                        <div class="card-header">
-                          <strong>
-                            <i class="fa fa-list-alt"></i> Search Parameters</strong>
-                        </div>
-                        <div class="card-body">
-                          <form role="form"></form>
-              
-                          
-                            <div class="form-group"></div>
-                              <label for="search">Search Term:</label>
-                              <input type="text" class="form-control" id="search">
-                            </div>
-              
-                        
-                            <div class="form-group">
-                              <label for="pwd">Number of Records to Retrieve:</label>
-                              <input type="text" class="form-control" id="numRecs">
-        
-                              
-                              </select>
-                            </div>
+              <div class="form-group">
+                <label for="start-year">Start Year (Optional):</label>
+                <input type="text" class="form-control" id="startYr">
+              </div>
 
+              <div class="form-group">
+                <label for="end-year">End Year (Optional):</label>
+                <input type="text" class="form-control" id="endYr">
+              </div>
+                   
+              <button type="submit" class="btn btn-default" id="searchBtn">
+                <i class="fa fa-search"></i> 
+                Search
+              </button>
 
-                            <div class="form-group">
-                                    <label for="start-year">Start Year (Optional):</label>
-                                    <input type="text" class="form-control" id="startYr">
-                            </div>
-
-
-                            <div class="form-group">
-                                    <label for="end-year">End Year (Optional):</label>
-                                    <input type="text" class="form-control" id="endYr">
-                                  </div>
+              <button class="btn btn-default" id="clearRslts">
+                <i class="fa fa-trash"></i>
+                Clear Results
+              </button>
                     
-                            <button type="submit" class="btn btn-default" id="searchBtn">
-                                        <i class="fa fa-search"></i> Search</button>
-                                      <button class="btn btn-default" id="clearRslts">
-                                        <i class="fa fa-trash"></i> Clear Results</button>
-                    
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+            </form>
+          </div>
+        </div>
+  </div>
+  </div>
 
-
-
-
-
-        
     
+
+
+
+        
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
