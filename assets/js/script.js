@@ -1,5 +1,5 @@
  Michael
-var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=trump&api-key=wt46tRae2IlBCuqzk6TDVkNTV4GfblUz";
+var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=trump&api-key=wt46tRae2IlBCuqzk6TDVkNTV4GfblUz"; //trump is the query now.
 $.ajax({
     url: queryURL,
     method: "GET"
@@ -34,11 +34,8 @@ function selectParams() {
 }
 
 selectParams();
-<<<<<<< HEAD
-=======
 
 //  https://api.nytimes.com/svc/search/v2/articlesearch.json?q={query}&api-key=wt46tRae2IlBCuqzk6TDVkNTV4GfblUz
 
 // testing for git push
  master
->>>>>>> master
